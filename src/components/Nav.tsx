@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
-const sections = [
+const anchorLinks = [
   { href: '#skills', label: 'skills' },
   { href: '#experience', label: 'experience' },
   { href: '#certifications', label: 'certs' },
@@ -20,11 +21,20 @@ export default function Nav() {
         </a>
         <button className="nav-toggle" onClick={() => setOpen(o => !o)} aria-label="Menu">☰</button>
         <ul className={`nav-links${open ? ' open' : ''}`}>
-          {sections.map(({ href, label }) => (
+          {anchorLinks.map(({ href, label }) => (
             <li key={href}>
               <a href={href} onClick={() => setOpen(false)}>{label}</a>
             </li>
           ))}
+          <li>
+            <NavLink
+              to="/now"
+              className={({ isActive }) => isActive ? 'active' : ''}
+              onClick={() => setOpen(false)}
+            >
+              now
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

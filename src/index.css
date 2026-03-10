@@ -748,6 +748,48 @@ a:hover { color: var(--cyan); }
   flex-wrap: wrap;
 }
 
+/* ── NOW PAGE ── */
+.now-item {
+  padding: 0.9rem 1.1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s;
+}
+.now-item:hover { border-color: var(--border-hover); }
+.now-item-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+.now-item-detail {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+.now-focus-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.now-focus-list li {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  padding-left: 1rem;
+  position: relative;
+}
+.now-focus-list li::before {
+  content: '❯';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-size: 0.65rem;
+  top: 0.15em;
+}
+
 /* ── FOOTER ── */
 .footer {
   text-align: center;
