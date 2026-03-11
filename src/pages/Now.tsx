@@ -14,13 +14,12 @@ const items = {
     },
   ],
   learning: [
-    { title: 'Deepening TypeScript', detail: 'Advanced generics, utility types, and type-safe patterns for large-scale React apps.' },
-    { title: 'AI-assisted development workflows', detail: 'Integrating AI tools (Claude, Copilot) into daily frontend dev — prompt engineering, code review, context management.' },
+    { title: 'AI-assisted development workflows', detail: 'Integrating AI tools (Claude, Copilot) into daily frontend dev — prompt engineering, code review, context management, agent setup.' },
   ],
   focus: [
-    'Building in public — shipping things and documenting the process.',
-    'Writing cleaner, more intentional component APIs.',
-    'Spending quality time with my son. 👨‍👧',
+    'Getting more backend knowledge, and AI development into my skillset.',
+    'Building and showcasing AI powered tools on github as part of my portfolio.',
+    'Getting more exercise done to shed down more weight and be fit!',
   ],
 }
 
